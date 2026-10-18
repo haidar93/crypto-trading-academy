@@ -6,8 +6,8 @@ import { ProgressCard } from "@/components/dashboard/progress-card";
 export default async function DashboardPage() {
     const user = await getUserProfile();
 
-    // Double protection: middleware udah protect, tapi tetep cek di sini
-    // (misal token expired atau invalid)
+    // double protection middleware udah protect, tapi tetep cek di sini
+    // misalkan token expired 
     if (!user) {
         redirect("/login");
     }

@@ -11,7 +11,8 @@ export function formatCompact(value: number) {
     return new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD",
-        notation: "compact", // <--- INI KUNCINYA (bikin jadi B, T, M)
+        notation: "compact",
+        minimumFractionDigits: 0, // <--- TAMBAHIN INI
         maximumFractionDigits: 1,
     }).format(value);
 }
