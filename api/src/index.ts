@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(
     cors({
-        origin: ["http://localhost:3000", "https://trade-with-haidar.vercel.app"], 
+        origin: ["http://localhost:3000", "https://tradewithhaidar.vercel.app"], 
         credentials: true,
     })
 );
