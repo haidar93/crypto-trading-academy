@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, User, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -26,6 +27,17 @@ export default async function ArticleDetailPage({ params }: ArticleDetailPagePro
             </Link>
 
             <article>
+                {/* Cover Image di Detail */}
+                <div className="relative mb-8 h-[300px] w-full overflow-hidden rounded-2xl bg-muted md:h-[400px]">
+                    <Image
+                        src={article.image}
+                        alt={article.title}
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </div>
+
                 {/* Header */}
                 <div className="mb-8 border-b border-border/40 pb-8">
                     <Badge variant="secondary" className="mb-4">

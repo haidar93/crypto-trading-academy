@@ -7,6 +7,7 @@ export type Course = {
     lessonsCount: number;
     isPremium: boolean;
     category: string;
+    image: string;
 };
 
 export type Lesson = {
@@ -26,6 +27,7 @@ export const COURSES: Course[] = [
         lessonsCount: 12,
         isPremium: false,
         category: "Fundamental",
+        image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=800&auto=format&fit=crop",
     },
     {
         id: "technical-analysis",
@@ -36,6 +38,7 @@ export const COURSES: Course[] = [
         lessonsCount: 20,
         isPremium: true,
         category: "Trading",
+        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop",
     },
     {
         id: "risk-management",
@@ -46,6 +49,7 @@ export const COURSES: Course[] = [
         lessonsCount: 8,
         isPremium: true,
         category: "Trading",
+        image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=800&auto=format&fit=crop",
     },
     {
         id: "trading-strategy",
@@ -56,6 +60,7 @@ export const COURSES: Course[] = [
         lessonsCount: 15,
         isPremium: true,
         category: "Trading",
+        image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=800&auto=format&fit=crop",
     },
     {
         id: "psychology",
@@ -66,6 +71,7 @@ export const COURSES: Course[] = [
         lessonsCount: 10,
         isPremium: false,
         category: "Mindset",
+        image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=800&auto=format&fit=crop",
     },
     {
         id: "advanced-strategy",
@@ -76,6 +82,7 @@ export const COURSES: Course[] = [
         lessonsCount: 25,
         isPremium: true,
         category: "Trading",
+        image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=800&auto=format&fit=crop",
     },
 ];
 

@@ -5,7 +5,15 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "coin-images.coingecko.com",
+        hostname: "coin-images.coingecko.com", 
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com", 
+      },
+      {
+        protocol: "https",
+        hostname: "sharemarketshiksha.weebly.com", 
       },
     ],
   },
